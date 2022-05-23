@@ -1,0 +1,132 @@
+Mon May  2 09:25:53 2022
+
+targets_num is the angle. ex: 20.0 or 40.0
+targets_one_hot is the one hot encoding for angle. ex: [1 0 1]
+
+Shape of waves is: torch.Size([514, 1024])
+Datatype of waves is: torch.float32
+waves requires grad: False
+Shape of targets is: torch.Size([514])
+Datatype of targets is: torch.int64
+targets requires grad: False
+Ex: 0
+Shape of targets_num is: torch.Size([514])
+Datatype of targets_num is: torch.float32
+targets_num requires grad: False
+Ex: 20.0
+Shape of targets_one_hot is: torch.Size([514, 6])
+Datatype of targets_one_hot is: torch.float32
+targets_one_hot requires grad: False
+Ex: tensor([1, 0, 0, 0, 0, 0])
+
+Parameters:
+time_stamp : 20220502_09-25-53
+SIG_LEN : 1024
+DT : 1e-07
+LOW_PASS : 50000
+HIGH_PASS : 800000
+FFT_UNITS : 1000
+NUM_BINS : 26
+EPOCHS : 3000
+LEARNING_RATE : 0.001
+BATCH_SIZE : 10
+angles : ['20deg' '22deg' '26deg' '30deg' '36deg' '40deg']
+train_angles : ['20deg', '40deg']
+test_angles : ['30deg']
+feature_dim : 1024
+
+Shape of x batch is: torch.Size([10, 1024])
+Datatype of x batch is: torch.float32
+
+Shape of y batch is: torch.Size([10])
+Datatype of y batch is: torch.float32
+
+------------------------------------------------------------------
+Begin model training...
+
+NeuralNetwork_02(
+  (layers): Sequential(
+    (0): Linear(in_features=1024, out_features=50, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=50, out_features=1, bias=True)
+  )
+)
+
+Begin Training...
+
+Testing loss at Epoch #  0 is :  14856.708984375
+Testing loss at Epoch #  50 is :  178.29685974121094
+Testing loss at Epoch #  100 is :  72.35893249511719
+Testing loss at Epoch #  150 is :  52.28435134887695
+Testing loss at Epoch #  200 is :  46.1899299621582
+Testing loss at Epoch #  250 is :  39.985164642333984
+Testing loss at Epoch #  300 is :  37.615047454833984
+Testing loss at Epoch #  350 is :  33.444602966308594
+Testing loss at Epoch #  400 is :  30.938488006591797
+Testing loss at Epoch #  450 is :  27.600732803344727
+Testing loss at Epoch #  500 is :  24.965194702148438
+Testing loss at Epoch #  550 is :  23.77215576171875
+Testing loss at Epoch #  600 is :  21.33717918395996
+Testing loss at Epoch #  650 is :  18.33332633972168
+Testing loss at Epoch #  700 is :  19.475635528564453
+Testing loss at Epoch #  750 is :  17.409517288208008
+Testing loss at Epoch #  800 is :  13.754395484924316
+Testing loss at Epoch #  850 is :  15.02883243560791
+Testing loss at Epoch #  900 is :  12.56401538848877
+Testing loss at Epoch #  950 is :  11.118654251098633
+Testing loss at Epoch #  1000 is :  9.889791488647461
+Testing loss at Epoch #  1050 is :  9.661972045898438
+Testing loss at Epoch #  1100 is :  9.655433654785156
+Testing loss at Epoch #  1150 is :  9.339792251586914
+Testing loss at Epoch #  1200 is :  7.63531494140625
+Testing loss at Epoch #  1250 is :  11.450936317443848
+Testing loss at Epoch #  1300 is :  7.186288356781006
+Testing loss at Epoch #  1350 is :  8.05090618133545
+Testing loss at Epoch #  1400 is :  6.384587287902832
+Testing loss at Epoch #  1450 is :  6.05989933013916
+Testing loss at Epoch #  1500 is :  5.94350004196167
+Testing loss at Epoch #  1550 is :  4.958835124969482
+Testing loss at Epoch #  1600 is :  5.118094444274902
+Testing loss at Epoch #  1650 is :  5.778201103210449
+Testing loss at Epoch #  1700 is :  6.4276018142700195
+Testing loss at Epoch #  1750 is :  5.346644878387451
+Testing loss at Epoch #  1800 is :  4.283154010772705
+Testing loss at Epoch #  1850 is :  4.394184112548828
+Testing loss at Epoch #  1900 is :  6.851445198059082
+Testing loss at Epoch #  1950 is :  4.135519981384277
+Testing loss at Epoch #  2000 is :  4.117180824279785
+Testing loss at Epoch #  2050 is :  4.654387950897217
+Testing loss at Epoch #  2100 is :  4.843292236328125
+Testing loss at Epoch #  2150 is :  4.754370212554932
+Testing loss at Epoch #  2200 is :  3.482969045639038
+Testing loss at Epoch #  2250 is :  3.6055684089660645
+Testing loss at Epoch #  2300 is :  3.4029555320739746
+Testing loss at Epoch #  2350 is :  3.3498427867889404
+Testing loss at Epoch #  2400 is :  6.2818827629089355
+Testing loss at Epoch #  2450 is :  3.5938239097595215
+Testing loss at Epoch #  2500 is :  4.62841796875
+Testing loss at Epoch #  2550 is :  3.7851760387420654
+Testing loss at Epoch #  2600 is :  3.3563663959503174
+Testing loss at Epoch #  2650 is :  4.458340167999268
+Testing loss at Epoch #  2700 is :  3.108762264251709
+Testing loss at Epoch #  2750 is :  5.149585723876953
+Testing loss at Epoch #  2800 is :  2.9851109981536865
+Testing loss at Epoch #  2850 is :  4.027139663696289
+Testing loss at Epoch #  2900 is :  2.7523350715637207
+Testing loss at Epoch #  2950 is :  4.178065776824951
+Testing loss at Epoch #  3000 is :  3.3784308433532715
+Training completed.
+
+------------------------------------------------------------------
+Begin model evaluation...
+
+
+Evaluate results on test data...
+
+
+Saved PyTorch Model State to nn01_3000_0.001_adam_mse.pth
+
+Saved data to nn01_3000_0.001_adam_mse.pkl
+
+Completed training and evaluation.
+

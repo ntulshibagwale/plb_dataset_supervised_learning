@@ -1,0 +1,467 @@
+Tue Apr 12 08:16:32 2022
+
+Shape of waves is: torch.Size([657, 1024])
+Datatype of waves is: torch.float32
+waves requires grad: False
+Shape of targets is: torch.Size([657, 4])
+Datatype of targets is: torch.float32
+targets requires grad: False
+
+Parameters:
+time_stamp : 20220412_08-16-32
+SIG_LEN : 1024
+DT : 1e-07
+LOW_PASS : 50000
+HIGH_PASS : 800000
+FFT_UNITS : 1000
+NUM_BINS : 26
+EPOCHS : 3000
+LEARNING_RATE : 0.001
+BATCH_SIZE : 20
+train_seed : 42
+train_percent : 0.5
+test_percent : 0.5
+total_count : 657
+train_count : 328
+test_count : 329
+angles : ['20deg' '26deg' '30deg' '40deg']
+feature_dim : 1024
+num_classes : 4
+
+Shape of x batch is: torch.Size([20, 1024])
+Datatype of x batch is: torch.float32
+
+Shape of y batch is: torch.Size([20, 4])
+Datatype of y batch is: torch.float32
+
+------------------------------------------------------------------
+Begin model training...
+
+NeuralNetwork_01(
+  (layers): Sequential(
+    (0): Linear(in_features=1024, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=10, out_features=4, bias=True)
+  )
+)
+
+Begin Training...
+
+Testing loss at Epoch #  0 is :  3.642303228378296
+Testing loss at Epoch #  50 is :  1.8053406476974487
+Testing loss at Epoch #  100 is :  1.406206488609314
+Testing loss at Epoch #  150 is :  1.3483408689498901
+Testing loss at Epoch #  200 is :  1.3338474035263062
+Testing loss at Epoch #  250 is :  1.298691987991333
+Testing loss at Epoch #  300 is :  1.299259901046753
+Testing loss at Epoch #  350 is :  1.2583132982254028
+Testing loss at Epoch #  400 is :  1.2639039754867554
+Testing loss at Epoch #  450 is :  1.2772367000579834
+Testing loss at Epoch #  500 is :  1.2524815797805786
+Testing loss at Epoch #  550 is :  1.2632250785827637
+Testing loss at Epoch #  600 is :  1.215667486190796
+Testing loss at Epoch #  650 is :  1.2300734519958496
+Testing loss at Epoch #  700 is :  1.2353804111480713
+Testing loss at Epoch #  750 is :  1.2403979301452637
+Testing loss at Epoch #  800 is :  1.2286913394927979
+Testing loss at Epoch #  850 is :  1.2186431884765625
+Testing loss at Epoch #  900 is :  1.2137181758880615
+Testing loss at Epoch #  950 is :  1.2143014669418335
+Testing loss at Epoch #  1000 is :  1.2323616743087769
+Testing loss at Epoch #  1050 is :  1.2158366441726685
+Testing loss at Epoch #  1100 is :  1.2145367860794067
+Testing loss at Epoch #  1150 is :  1.1986737251281738
+Testing loss at Epoch #  1200 is :  1.2364643812179565
+Testing loss at Epoch #  1250 is :  1.213120698928833
+Testing loss at Epoch #  1300 is :  1.2123104333877563
+Testing loss at Epoch #  1350 is :  1.2001655101776123
+Testing loss at Epoch #  1400 is :  1.186824917793274
+Testing loss at Epoch #  1450 is :  1.1918458938598633
+Testing loss at Epoch #  1500 is :  1.1766695976257324
+Testing loss at Epoch #  1550 is :  1.1873105764389038
+Testing loss at Epoch #  1600 is :  1.2128766775131226
+Testing loss at Epoch #  1650 is :  1.1949121952056885
+Testing loss at Epoch #  1700 is :  1.1991907358169556
+Testing loss at Epoch #  1750 is :  1.1993941068649292
+Testing loss at Epoch #  1800 is :  1.1968750953674316
+Testing loss at Epoch #  1850 is :  1.2022655010223389
+Testing loss at Epoch #  1900 is :  1.1597633361816406
+Testing loss at Epoch #  1950 is :  1.1776689291000366
+Testing loss at Epoch #  2000 is :  1.1711450815200806
+Testing loss at Epoch #  2050 is :  1.1994065046310425
+Testing loss at Epoch #  2100 is :  1.192144513130188
+Testing loss at Epoch #  2150 is :  1.1668899059295654
+Testing loss at Epoch #  2200 is :  1.172835111618042
+Testing loss at Epoch #  2250 is :  1.1867610216140747
+Testing loss at Epoch #  2300 is :  1.1894763708114624
+Testing loss at Epoch #  2350 is :  1.1561834812164307
+Testing loss at Epoch #  2400 is :  1.1703715324401855
+Testing loss at Epoch #  2450 is :  1.1789867877960205
+Testing loss at Epoch #  2500 is :  1.1535429954528809
+Testing loss at Epoch #  2550 is :  1.1773180961608887
+Testing loss at Epoch #  2600 is :  1.1718071699142456
+Testing loss at Epoch #  2650 is :  1.1729309558868408
+Testing loss at Epoch #  2700 is :  1.1836374998092651
+Testing loss at Epoch #  2750 is :  1.198167085647583
+Testing loss at Epoch #  2800 is :  1.1802325248718262
+Testing loss at Epoch #  2850 is :  1.1776549816131592
+Testing loss at Epoch #  2900 is :  1.1567037105560303
+Testing loss at Epoch #  2950 is :  1.1688920259475708
+Testing loss at Epoch #  3000 is :  1.1626499891281128
+Training completed.
+
+------------------------------------------------------------------
+Begin model evaluation...
+
+
+Evaluate results on test data...
+
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=2
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 3 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 1 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 3 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 0 , target=2
+class_prediction= 3 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 3 , target=2
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 2 , target=2
+class_prediction= 1 , target=2
+class_prediction= 1 , target=2
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 3 , target=2
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 3 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=2
+class_prediction= 3 , target=2
+class_prediction= 3 , target=3
+class_prediction= 1 , target=2
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=2
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 3 , target=0
+class_prediction= 0 , target=0
+class_prediction= 2 , target=2
+class_prediction= 3 , target=0
+class_prediction= 3 , target=2
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 1 , target=2
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=2
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 3 , target=2
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=2
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 3 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=2
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=2
+class_prediction= 0 , target=0
+class_prediction= 3 , target=2
+class_prediction= 3 , target=1
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=1
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=2
+class_prediction= 0 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 3 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 2 , target=2
+class_prediction= 1 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=2
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=2
+class_prediction= 3 , target=3
+class_prediction= 1 , target=2
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=2
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 3 , target=2
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 3 , target=2
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+
+Test Set Metrics:
+              precision    recall  f1-score   support
+
+       20deg       0.97      0.96      0.96        68
+       26deg       0.96      0.86      0.91       130
+       30deg       0.42      1.00      0.60        31
+       40deg       0.99      0.71      0.83       100
+
+    accuracy                           0.85       329
+   macro avg       0.83      0.88      0.82       329
+weighted avg       0.92      0.85      0.86       329
+
+
+Saved PyTorch Model State to nn01_3000_0.001_adam_mse.pth
+
+Saved data to nn01_3000_0.001_adam_mse.pkl
+
+Completed training and evaluation.
+
