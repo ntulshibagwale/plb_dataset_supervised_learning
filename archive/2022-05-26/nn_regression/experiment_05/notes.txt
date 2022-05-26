@@ -1,0 +1,5 @@
+5-25-2022
+So it appears that training it on 20 and 40 degrees
+and then going to see if it can predict the in between angles
+does not work well.
+Performs great on the data it was trained on though!

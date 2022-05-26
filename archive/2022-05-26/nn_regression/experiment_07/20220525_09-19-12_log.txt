@@ -1,0 +1,678 @@
+Wed May 25 09:19:12 2022
+
+targets_num is the angle. ex: 20.0 or 40.0
+targets_one_hot is the one hot encoding for angle. ex: [1 0 1]
+
+Shape of waves is: torch.Size([514, 1024])
+Datatype of waves is: torch.float32
+waves requires grad: False
+Shape of targets is: torch.Size([514])
+Datatype of targets is: torch.int64
+targets requires grad: False
+Ex: 0
+Shape of targets_num is: torch.Size([514])
+Datatype of targets_num is: torch.float32
+targets_num requires grad: False
+Ex: 20.0
+Shape of targets_one_hot is: torch.Size([514, 6])
+Datatype of targets_one_hot is: torch.float32
+targets_one_hot requires grad: False
+Ex: tensor([1, 0, 0, 0, 0, 0])
+
+AcousticEmissionDataset loaded in!
+
+Parameters:
+time_stamp : 20220525_09-19-12
+SIG_LEN : 1024
+DT : 1e-07
+LOW_PASS : 50000
+HIGH_PASS : 800000
+FFT_UNITS : 1000
+NUM_BINS : 26
+EPOCHS : 30000
+LEARNING_RATE : 0.001
+BATCH_SIZE : 20
+train_seed : 42
+train_percent : 0.9
+test_percent : 0.09999999999999998
+total_count : 514
+train_count : 462
+test_count : 52
+angles : ['20deg' '22deg' '26deg' '30deg' '36deg' '40deg']
+feature_dim : 1024
+
+Shape of x batch is: torch.Size([20, 1024])
+Datatype of x batch is: torch.float32
+
+Shape of y batch is: torch.Size([20])
+Datatype of y batch is: torch.float32
+
+------------------------------------------------------------------
+Begin model training...
+
+NeuralNetwork_02(
+  (layers): Sequential(
+    (0): Linear(in_features=1024, out_features=50, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=50, out_features=1, bias=True)
+  )
+)
+
+Begin Training...
+
+Testing loss at Epoch #  0 is :  14130.2919921875
+Testing loss at Epoch #  50 is :  310.6767272949219
+Testing loss at Epoch #  100 is :  236.1580810546875
+Testing loss at Epoch #  150 is :  214.7041015625
+Testing loss at Epoch #  200 is :  190.2328643798828
+Testing loss at Epoch #  250 is :  174.0066375732422
+Testing loss at Epoch #  300 is :  160.4011993408203
+Testing loss at Epoch #  350 is :  146.38528442382812
+Testing loss at Epoch #  400 is :  135.56585693359375
+Testing loss at Epoch #  450 is :  132.93316650390625
+Testing loss at Epoch #  500 is :  103.67733764648438
+Testing loss at Epoch #  550 is :  124.72659301757812
+Testing loss at Epoch #  600 is :  85.4486312866211
+Testing loss at Epoch #  650 is :  91.79000854492188
+Testing loss at Epoch #  700 is :  90.43141174316406
+Testing loss at Epoch #  750 is :  72.78038024902344
+Testing loss at Epoch #  800 is :  71.34190368652344
+Testing loss at Epoch #  850 is :  63.62607955932617
+Testing loss at Epoch #  900 is :  61.39276123046875
+Testing loss at Epoch #  950 is :  62.64413833618164
+Testing loss at Epoch #  1000 is :  58.87200164794922
+Testing loss at Epoch #  1050 is :  58.88201141357422
+Testing loss at Epoch #  1100 is :  57.860130310058594
+Testing loss at Epoch #  1150 is :  71.46338653564453
+Testing loss at Epoch #  1200 is :  67.09866333007812
+Testing loss at Epoch #  1250 is :  57.962974548339844
+Testing loss at Epoch #  1300 is :  54.793148040771484
+Testing loss at Epoch #  1350 is :  59.768707275390625
+Testing loss at Epoch #  1400 is :  55.00849151611328
+Testing loss at Epoch #  1450 is :  49.74398422241211
+Testing loss at Epoch #  1500 is :  60.046592712402344
+Testing loss at Epoch #  1550 is :  49.86422348022461
+Testing loss at Epoch #  1600 is :  47.95455551147461
+Testing loss at Epoch #  1650 is :  54.528602600097656
+Testing loss at Epoch #  1700 is :  65.80802917480469
+Testing loss at Epoch #  1750 is :  61.45152282714844
+Testing loss at Epoch #  1800 is :  59.57447052001953
+Testing loss at Epoch #  1850 is :  52.523162841796875
+Testing loss at Epoch #  1900 is :  45.41976547241211
+Testing loss at Epoch #  1950 is :  51.07076644897461
+Testing loss at Epoch #  2000 is :  49.51708984375
+Testing loss at Epoch #  2050 is :  44.862545013427734
+Testing loss at Epoch #  2100 is :  50.96226501464844
+Testing loss at Epoch #  2150 is :  59.39175796508789
+Testing loss at Epoch #  2200 is :  63.15028381347656
+Testing loss at Epoch #  2250 is :  42.99197769165039
+Testing loss at Epoch #  2300 is :  48.53791427612305
+Testing loss at Epoch #  2350 is :  44.92837142944336
+Testing loss at Epoch #  2400 is :  56.408267974853516
+Testing loss at Epoch #  2450 is :  48.67189025878906
+Testing loss at Epoch #  2500 is :  43.032386779785156
+Testing loss at Epoch #  2550 is :  57.0006217956543
+Testing loss at Epoch #  2600 is :  44.211124420166016
+Testing loss at Epoch #  2650 is :  65.40290832519531
+Testing loss at Epoch #  2700 is :  89.80940246582031
+Testing loss at Epoch #  2750 is :  93.20108032226562
+Testing loss at Epoch #  2800 is :  51.23715591430664
+Testing loss at Epoch #  2850 is :  55.85256576538086
+Testing loss at Epoch #  2900 is :  47.69123077392578
+Testing loss at Epoch #  2950 is :  39.927528381347656
+Testing loss at Epoch #  3000 is :  51.45539474487305
+Testing loss at Epoch #  3050 is :  51.6867790222168
+Testing loss at Epoch #  3100 is :  42.374656677246094
+Testing loss at Epoch #  3150 is :  43.535888671875
+Testing loss at Epoch #  3200 is :  50.44245910644531
+Testing loss at Epoch #  3250 is :  50.82051467895508
+Testing loss at Epoch #  3300 is :  40.98311996459961
+Testing loss at Epoch #  3350 is :  39.02086639404297
+Testing loss at Epoch #  3400 is :  39.30257797241211
+Testing loss at Epoch #  3450 is :  50.35097885131836
+Testing loss at Epoch #  3500 is :  39.209598541259766
+Testing loss at Epoch #  3550 is :  39.18718719482422
+Testing loss at Epoch #  3600 is :  42.39881134033203
+Testing loss at Epoch #  3650 is :  42.89347839355469
+Testing loss at Epoch #  3700 is :  41.61137771606445
+Testing loss at Epoch #  3750 is :  39.97618103027344
+Testing loss at Epoch #  3800 is :  47.739742279052734
+Testing loss at Epoch #  3850 is :  37.54283142089844
+Testing loss at Epoch #  3900 is :  41.149940490722656
+Testing loss at Epoch #  3950 is :  48.04563903808594
+Testing loss at Epoch #  4000 is :  39.420135498046875
+Testing loss at Epoch #  4050 is :  48.932411193847656
+Testing loss at Epoch #  4100 is :  38.72320556640625
+Testing loss at Epoch #  4150 is :  41.49981689453125
+Testing loss at Epoch #  4200 is :  39.441741943359375
+Testing loss at Epoch #  4250 is :  71.73221588134766
+Testing loss at Epoch #  4300 is :  37.44770050048828
+Testing loss at Epoch #  4350 is :  37.92097473144531
+Testing loss at Epoch #  4400 is :  39.447845458984375
+Testing loss at Epoch #  4450 is :  38.3125114440918
+Testing loss at Epoch #  4500 is :  36.97216796875
+Testing loss at Epoch #  4550 is :  54.954429626464844
+Testing loss at Epoch #  4600 is :  37.037837982177734
+Testing loss at Epoch #  4650 is :  38.355857849121094
+Testing loss at Epoch #  4700 is :  41.46072006225586
+Testing loss at Epoch #  4750 is :  50.53380584716797
+Testing loss at Epoch #  4800 is :  42.83291244506836
+Testing loss at Epoch #  4850 is :  40.837684631347656
+Testing loss at Epoch #  4900 is :  35.14231491088867
+Testing loss at Epoch #  4950 is :  35.92664337158203
+Testing loss at Epoch #  5000 is :  46.75259017944336
+Testing loss at Epoch #  5050 is :  42.09453582763672
+Testing loss at Epoch #  5100 is :  49.36971664428711
+Testing loss at Epoch #  5150 is :  34.51713180541992
+Testing loss at Epoch #  5200 is :  35.27384567260742
+Testing loss at Epoch #  5250 is :  38.68510055541992
+Testing loss at Epoch #  5300 is :  40.42099380493164
+Testing loss at Epoch #  5350 is :  44.4630241394043
+Testing loss at Epoch #  5400 is :  47.06693649291992
+Testing loss at Epoch #  5450 is :  43.814964294433594
+Testing loss at Epoch #  5500 is :  35.6439208984375
+Testing loss at Epoch #  5550 is :  34.534481048583984
+Testing loss at Epoch #  5600 is :  34.5823860168457
+Testing loss at Epoch #  5650 is :  36.156490325927734
+Testing loss at Epoch #  5700 is :  33.84544372558594
+Testing loss at Epoch #  5750 is :  46.41433334350586
+Testing loss at Epoch #  5800 is :  37.39921569824219
+Testing loss at Epoch #  5850 is :  38.16802978515625
+Testing loss at Epoch #  5900 is :  36.76292037963867
+Testing loss at Epoch #  5950 is :  46.06166458129883
+Testing loss at Epoch #  6000 is :  35.931453704833984
+Testing loss at Epoch #  6050 is :  37.050132751464844
+Testing loss at Epoch #  6100 is :  53.465999603271484
+Testing loss at Epoch #  6150 is :  52.18918991088867
+Testing loss at Epoch #  6200 is :  34.537071228027344
+Testing loss at Epoch #  6250 is :  38.06026840209961
+Testing loss at Epoch #  6300 is :  35.663978576660156
+Testing loss at Epoch #  6350 is :  32.264793395996094
+Testing loss at Epoch #  6400 is :  38.000526428222656
+Testing loss at Epoch #  6450 is :  32.03863525390625
+Testing loss at Epoch #  6500 is :  34.60175704956055
+Testing loss at Epoch #  6550 is :  34.60281753540039
+Testing loss at Epoch #  6600 is :  34.848472595214844
+Testing loss at Epoch #  6650 is :  33.787933349609375
+Testing loss at Epoch #  6700 is :  34.99800109863281
+Testing loss at Epoch #  6750 is :  37.276329040527344
+Testing loss at Epoch #  6800 is :  31.216909408569336
+Testing loss at Epoch #  6850 is :  39.278221130371094
+Testing loss at Epoch #  6900 is :  45.871395111083984
+Testing loss at Epoch #  6950 is :  34.97755432128906
+Testing loss at Epoch #  7000 is :  40.53119659423828
+Testing loss at Epoch #  7050 is :  31.159452438354492
+Testing loss at Epoch #  7100 is :  31.652814865112305
+Testing loss at Epoch #  7150 is :  44.60108947753906
+Testing loss at Epoch #  7200 is :  33.15739822387695
+Testing loss at Epoch #  7250 is :  32.54933547973633
+Testing loss at Epoch #  7300 is :  52.959171295166016
+Testing loss at Epoch #  7350 is :  32.95976638793945
+Testing loss at Epoch #  7400 is :  31.514720916748047
+Testing loss at Epoch #  7450 is :  38.3768196105957
+Testing loss at Epoch #  7500 is :  33.048831939697266
+Testing loss at Epoch #  7550 is :  33.46989059448242
+Testing loss at Epoch #  7600 is :  32.4940299987793
+Testing loss at Epoch #  7650 is :  57.324134826660156
+Testing loss at Epoch #  7700 is :  34.59926223754883
+Testing loss at Epoch #  7750 is :  31.192054748535156
+Testing loss at Epoch #  7800 is :  48.10464096069336
+Testing loss at Epoch #  7850 is :  32.374000549316406
+Testing loss at Epoch #  7900 is :  30.646005630493164
+Testing loss at Epoch #  7950 is :  36.067787170410156
+Testing loss at Epoch #  8000 is :  31.015403747558594
+Testing loss at Epoch #  8050 is :  31.526443481445312
+Testing loss at Epoch #  8100 is :  31.079593658447266
+Testing loss at Epoch #  8150 is :  30.676219940185547
+Testing loss at Epoch #  8200 is :  30.027748107910156
+Testing loss at Epoch #  8250 is :  35.61693572998047
+Testing loss at Epoch #  8300 is :  57.184715270996094
+Testing loss at Epoch #  8350 is :  31.368223190307617
+Testing loss at Epoch #  8400 is :  33.239646911621094
+Testing loss at Epoch #  8450 is :  32.487953186035156
+Testing loss at Epoch #  8500 is :  29.14266014099121
+Testing loss at Epoch #  8550 is :  37.20071029663086
+Testing loss at Epoch #  8600 is :  35.61698913574219
+Testing loss at Epoch #  8650 is :  28.130542755126953
+Testing loss at Epoch #  8700 is :  32.25834274291992
+Testing loss at Epoch #  8750 is :  41.29471969604492
+Testing loss at Epoch #  8800 is :  29.738384246826172
+Testing loss at Epoch #  8850 is :  30.54514503479004
+Testing loss at Epoch #  8900 is :  29.575498580932617
+Testing loss at Epoch #  8950 is :  28.29145622253418
+Testing loss at Epoch #  9000 is :  27.72410011291504
+Testing loss at Epoch #  9050 is :  28.244991302490234
+Testing loss at Epoch #  9100 is :  33.44615173339844
+Testing loss at Epoch #  9150 is :  28.787973403930664
+Testing loss at Epoch #  9200 is :  38.35716247558594
+Testing loss at Epoch #  9250 is :  30.124122619628906
+Testing loss at Epoch #  9300 is :  36.715938568115234
+Testing loss at Epoch #  9350 is :  38.079429626464844
+Testing loss at Epoch #  9400 is :  26.718841552734375
+Testing loss at Epoch #  9450 is :  26.3751277923584
+Testing loss at Epoch #  9500 is :  48.13249588012695
+Testing loss at Epoch #  9550 is :  26.766448974609375
+Testing loss at Epoch #  9600 is :  32.1137809753418
+Testing loss at Epoch #  9650 is :  30.786144256591797
+Testing loss at Epoch #  9700 is :  33.39852523803711
+Testing loss at Epoch #  9750 is :  25.946874618530273
+Testing loss at Epoch #  9800 is :  31.7482852935791
+Testing loss at Epoch #  9850 is :  30.033720016479492
+Testing loss at Epoch #  9900 is :  25.42276954650879
+Testing loss at Epoch #  9950 is :  25.871274948120117
+Testing loss at Epoch #  10000 is :  30.743894577026367
+Testing loss at Epoch #  10050 is :  25.305978775024414
+Testing loss at Epoch #  10100 is :  28.275882720947266
+Testing loss at Epoch #  10150 is :  26.732402801513672
+Testing loss at Epoch #  10200 is :  30.971923828125
+Testing loss at Epoch #  10250 is :  28.32091522216797
+Testing loss at Epoch #  10300 is :  24.566123962402344
+Testing loss at Epoch #  10350 is :  24.088115692138672
+Testing loss at Epoch #  10400 is :  26.37841033935547
+Testing loss at Epoch #  10450 is :  23.907337188720703
+Testing loss at Epoch #  10500 is :  25.045984268188477
+Testing loss at Epoch #  10550 is :  33.858280181884766
+Testing loss at Epoch #  10600 is :  24.974340438842773
+Testing loss at Epoch #  10650 is :  27.50140953063965
+Testing loss at Epoch #  10700 is :  30.072765350341797
+Testing loss at Epoch #  10750 is :  35.078121185302734
+Testing loss at Epoch #  10800 is :  45.20210647583008
+Testing loss at Epoch #  10850 is :  26.305688858032227
+Testing loss at Epoch #  10900 is :  25.522626876831055
+Testing loss at Epoch #  10950 is :  23.50974464416504
+Testing loss at Epoch #  11000 is :  28.111608505249023
+Testing loss at Epoch #  11050 is :  24.751644134521484
+Testing loss at Epoch #  11100 is :  38.718299865722656
+Testing loss at Epoch #  11150 is :  24.418636322021484
+Testing loss at Epoch #  11200 is :  27.516813278198242
+Testing loss at Epoch #  11250 is :  23.66370391845703
+Testing loss at Epoch #  11300 is :  26.33586311340332
+Testing loss at Epoch #  11350 is :  24.925844192504883
+Testing loss at Epoch #  11400 is :  43.137935638427734
+Testing loss at Epoch #  11450 is :  24.731735229492188
+Testing loss at Epoch #  11500 is :  25.445940017700195
+Testing loss at Epoch #  11550 is :  34.351139068603516
+Testing loss at Epoch #  11600 is :  29.85292625427246
+Testing loss at Epoch #  11650 is :  27.48459815979004
+Testing loss at Epoch #  11700 is :  21.68891716003418
+Testing loss at Epoch #  11750 is :  23.014413833618164
+Testing loss at Epoch #  11800 is :  25.829668045043945
+Testing loss at Epoch #  11850 is :  20.840234756469727
+Testing loss at Epoch #  11900 is :  33.353858947753906
+Testing loss at Epoch #  11950 is :  26.551849365234375
+Testing loss at Epoch #  12000 is :  24.19488525390625
+Testing loss at Epoch #  12050 is :  20.315752029418945
+Testing loss at Epoch #  12100 is :  21.785884857177734
+Testing loss at Epoch #  12150 is :  38.89753723144531
+Testing loss at Epoch #  12200 is :  24.447101593017578
+Testing loss at Epoch #  12250 is :  20.389978408813477
+Testing loss at Epoch #  12300 is :  20.833728790283203
+Testing loss at Epoch #  12350 is :  20.800098419189453
+Testing loss at Epoch #  12400 is :  23.280588150024414
+Testing loss at Epoch #  12450 is :  20.37138557434082
+Testing loss at Epoch #  12500 is :  23.28958511352539
+Testing loss at Epoch #  12550 is :  31.8315486907959
+Testing loss at Epoch #  12600 is :  19.164392471313477
+Testing loss at Epoch #  12650 is :  26.098337173461914
+Testing loss at Epoch #  12700 is :  19.101594924926758
+Testing loss at Epoch #  12750 is :  21.915409088134766
+Testing loss at Epoch #  12800 is :  19.074970245361328
+Testing loss at Epoch #  12850 is :  27.11043930053711
+Testing loss at Epoch #  12900 is :  35.219566345214844
+Testing loss at Epoch #  12950 is :  19.147136688232422
+Testing loss at Epoch #  13000 is :  19.33993911743164
+Testing loss at Epoch #  13050 is :  19.779922485351562
+Testing loss at Epoch #  13100 is :  21.425338745117188
+Testing loss at Epoch #  13150 is :  21.639942169189453
+Testing loss at Epoch #  13200 is :  19.881027221679688
+Testing loss at Epoch #  13250 is :  24.231399536132812
+Testing loss at Epoch #  13300 is :  18.572895050048828
+Testing loss at Epoch #  13350 is :  21.70291519165039
+Testing loss at Epoch #  13400 is :  21.452096939086914
+Testing loss at Epoch #  13450 is :  19.929162979125977
+Testing loss at Epoch #  13500 is :  18.285449981689453
+Testing loss at Epoch #  13550 is :  23.076457977294922
+Testing loss at Epoch #  13600 is :  18.821155548095703
+Testing loss at Epoch #  13650 is :  24.495635986328125
+Testing loss at Epoch #  13700 is :  17.933256149291992
+Testing loss at Epoch #  13750 is :  20.670610427856445
+Testing loss at Epoch #  13800 is :  20.534231185913086
+Testing loss at Epoch #  13850 is :  17.920352935791016
+Testing loss at Epoch #  13900 is :  17.422513961791992
+Testing loss at Epoch #  13950 is :  17.455463409423828
+Testing loss at Epoch #  14000 is :  17.333986282348633
+Testing loss at Epoch #  14050 is :  16.91135597229004
+Testing loss at Epoch #  14100 is :  19.098068237304688
+Testing loss at Epoch #  14150 is :  17.849273681640625
+Testing loss at Epoch #  14200 is :  21.350191116333008
+Testing loss at Epoch #  14250 is :  19.21871566772461
+Testing loss at Epoch #  14300 is :  30.65224838256836
+Testing loss at Epoch #  14350 is :  28.214326858520508
+Testing loss at Epoch #  14400 is :  19.12666893005371
+Testing loss at Epoch #  14450 is :  25.21345329284668
+Testing loss at Epoch #  14500 is :  18.238811492919922
+Testing loss at Epoch #  14550 is :  30.048593521118164
+Testing loss at Epoch #  14600 is :  16.975156784057617
+Testing loss at Epoch #  14650 is :  17.975173950195312
+Testing loss at Epoch #  14700 is :  16.64151954650879
+Testing loss at Epoch #  14750 is :  32.432865142822266
+Testing loss at Epoch #  14800 is :  20.984607696533203
+Testing loss at Epoch #  14850 is :  16.103038787841797
+Testing loss at Epoch #  14900 is :  18.065383911132812
+Testing loss at Epoch #  14950 is :  17.93848991394043
+Testing loss at Epoch #  15000 is :  33.05714416503906
+Testing loss at Epoch #  15050 is :  19.903060913085938
+Testing loss at Epoch #  15100 is :  23.538742065429688
+Testing loss at Epoch #  15150 is :  17.220548629760742
+Testing loss at Epoch #  15200 is :  17.22738265991211
+Testing loss at Epoch #  15250 is :  38.13332748413086
+Testing loss at Epoch #  15300 is :  21.15564727783203
+Testing loss at Epoch #  15350 is :  15.867463111877441
+Testing loss at Epoch #  15400 is :  46.98737716674805
+Testing loss at Epoch #  15450 is :  17.056909561157227
+Testing loss at Epoch #  15500 is :  18.3046875
+Testing loss at Epoch #  15550 is :  15.91537094116211
+Testing loss at Epoch #  15600 is :  26.131135940551758
+Testing loss at Epoch #  15650 is :  17.0185604095459
+Testing loss at Epoch #  15700 is :  17.264915466308594
+Testing loss at Epoch #  15750 is :  18.82460594177246
+Testing loss at Epoch #  15800 is :  16.498275756835938
+Testing loss at Epoch #  15850 is :  15.781442642211914
+Testing loss at Epoch #  15900 is :  16.736295700073242
+Testing loss at Epoch #  15950 is :  31.83648109436035
+Testing loss at Epoch #  16000 is :  16.65505027770996
+Testing loss at Epoch #  16050 is :  15.29857349395752
+Testing loss at Epoch #  16100 is :  16.293476104736328
+Testing loss at Epoch #  16150 is :  22.94624137878418
+Testing loss at Epoch #  16200 is :  26.538372039794922
+Testing loss at Epoch #  16250 is :  21.312768936157227
+Testing loss at Epoch #  16300 is :  20.050106048583984
+Testing loss at Epoch #  16350 is :  15.233556747436523
+Testing loss at Epoch #  16400 is :  24.928993225097656
+Testing loss at Epoch #  16450 is :  16.75344467163086
+Testing loss at Epoch #  16500 is :  14.35081672668457
+Testing loss at Epoch #  16550 is :  15.396488189697266
+Testing loss at Epoch #  16600 is :  14.858543395996094
+Testing loss at Epoch #  16650 is :  15.627739906311035
+Testing loss at Epoch #  16700 is :  15.048751831054688
+Testing loss at Epoch #  16750 is :  15.602567672729492
+Testing loss at Epoch #  16800 is :  17.523700714111328
+Testing loss at Epoch #  16850 is :  28.585617065429688
+Testing loss at Epoch #  16900 is :  19.215444564819336
+Testing loss at Epoch #  16950 is :  13.638442039489746
+Testing loss at Epoch #  17000 is :  14.751164436340332
+Testing loss at Epoch #  17050 is :  14.2904691696167
+Testing loss at Epoch #  17100 is :  17.266613006591797
+Testing loss at Epoch #  17150 is :  39.09603500366211
+Testing loss at Epoch #  17200 is :  13.334909439086914
+Testing loss at Epoch #  17250 is :  37.98394775390625
+Testing loss at Epoch #  17300 is :  22.089750289916992
+Testing loss at Epoch #  17350 is :  12.491510391235352
+Testing loss at Epoch #  17400 is :  16.64674186706543
+Testing loss at Epoch #  17450 is :  15.659615516662598
+Testing loss at Epoch #  17500 is :  14.879695892333984
+Testing loss at Epoch #  17550 is :  19.70889663696289
+Testing loss at Epoch #  17600 is :  14.923382759094238
+Testing loss at Epoch #  17650 is :  18.724102020263672
+Testing loss at Epoch #  17700 is :  12.20775318145752
+Testing loss at Epoch #  17750 is :  12.250429153442383
+Testing loss at Epoch #  17800 is :  15.654863357543945
+Testing loss at Epoch #  17850 is :  13.524602890014648
+Testing loss at Epoch #  17900 is :  11.760570526123047
+Testing loss at Epoch #  17950 is :  17.470293045043945
+Testing loss at Epoch #  18000 is :  18.421398162841797
+Testing loss at Epoch #  18050 is :  18.348445892333984
+Testing loss at Epoch #  18100 is :  12.94342041015625
+Testing loss at Epoch #  18150 is :  12.178013801574707
+Testing loss at Epoch #  18200 is :  12.953843116760254
+Testing loss at Epoch #  18250 is :  12.079073905944824
+Testing loss at Epoch #  18300 is :  11.729907989501953
+Testing loss at Epoch #  18350 is :  14.613231658935547
+Testing loss at Epoch #  18400 is :  11.98002815246582
+Testing loss at Epoch #  18450 is :  12.267951011657715
+Testing loss at Epoch #  18500 is :  15.146936416625977
+Testing loss at Epoch #  18550 is :  22.200355529785156
+Testing loss at Epoch #  18600 is :  21.034284591674805
+Testing loss at Epoch #  18650 is :  13.340394020080566
+Testing loss at Epoch #  18700 is :  11.632689476013184
+Testing loss at Epoch #  18750 is :  11.761823654174805
+Testing loss at Epoch #  18800 is :  11.595253944396973
+Testing loss at Epoch #  18850 is :  14.265414237976074
+Testing loss at Epoch #  18900 is :  13.609748840332031
+Testing loss at Epoch #  18950 is :  12.626663208007812
+Testing loss at Epoch #  19000 is :  11.240031242370605
+Testing loss at Epoch #  19050 is :  14.977824211120605
+Testing loss at Epoch #  19100 is :  13.564338684082031
+Testing loss at Epoch #  19150 is :  10.909196853637695
+Testing loss at Epoch #  19200 is :  12.574308395385742
+Testing loss at Epoch #  19250 is :  13.33051586151123
+Testing loss at Epoch #  19300 is :  12.98232364654541
+Testing loss at Epoch #  19350 is :  11.749492645263672
+Testing loss at Epoch #  19400 is :  18.90066909790039
+Testing loss at Epoch #  19450 is :  11.657649040222168
+Testing loss at Epoch #  19500 is :  10.95177936553955
+Testing loss at Epoch #  19550 is :  12.767091751098633
+Testing loss at Epoch #  19600 is :  12.0560884475708
+Testing loss at Epoch #  19650 is :  12.422287940979004
+Testing loss at Epoch #  19700 is :  11.964841842651367
+Testing loss at Epoch #  19750 is :  17.365711212158203
+Testing loss at Epoch #  19800 is :  12.776642799377441
+Testing loss at Epoch #  19850 is :  13.594195365905762
+Testing loss at Epoch #  19900 is :  10.997153282165527
+Testing loss at Epoch #  19950 is :  12.438825607299805
+Testing loss at Epoch #  20000 is :  10.910901069641113
+Testing loss at Epoch #  20050 is :  10.662460327148438
+Testing loss at Epoch #  20100 is :  10.805959701538086
+Testing loss at Epoch #  20150 is :  15.086604118347168
+Testing loss at Epoch #  20200 is :  11.528977394104004
+Testing loss at Epoch #  20250 is :  10.789417266845703
+Testing loss at Epoch #  20300 is :  15.251006126403809
+Testing loss at Epoch #  20350 is :  10.4744291305542
+Testing loss at Epoch #  20400 is :  22.348979949951172
+Testing loss at Epoch #  20450 is :  12.485343933105469
+Testing loss at Epoch #  20500 is :  10.882018089294434
+Testing loss at Epoch #  20550 is :  22.356639862060547
+Testing loss at Epoch #  20600 is :  16.810596466064453
+Testing loss at Epoch #  20650 is :  12.11417007446289
+Testing loss at Epoch #  20700 is :  11.543344497680664
+Testing loss at Epoch #  20750 is :  11.332557678222656
+Testing loss at Epoch #  20800 is :  19.348154067993164
+Testing loss at Epoch #  20850 is :  10.026826858520508
+Testing loss at Epoch #  20900 is :  15.388192176818848
+Testing loss at Epoch #  20950 is :  11.954214096069336
+Testing loss at Epoch #  21000 is :  20.954458236694336
+Testing loss at Epoch #  21050 is :  13.851177215576172
+Testing loss at Epoch #  21100 is :  22.64980697631836
+Testing loss at Epoch #  21150 is :  9.925166130065918
+Testing loss at Epoch #  21200 is :  12.197644233703613
+Testing loss at Epoch #  21250 is :  10.494256973266602
+Testing loss at Epoch #  21300 is :  11.741096496582031
+Testing loss at Epoch #  21350 is :  14.017011642456055
+Testing loss at Epoch #  21400 is :  20.41767120361328
+Testing loss at Epoch #  21450 is :  9.72811508178711
+Testing loss at Epoch #  21500 is :  16.275114059448242
+Testing loss at Epoch #  21550 is :  30.16542625427246
+Testing loss at Epoch #  21600 is :  9.258604049682617
+Testing loss at Epoch #  21650 is :  9.800859451293945
+Testing loss at Epoch #  21700 is :  10.861916542053223
+Testing loss at Epoch #  21750 is :  12.208431243896484
+Testing loss at Epoch #  21800 is :  13.649876594543457
+Testing loss at Epoch #  21850 is :  10.489200592041016
+Testing loss at Epoch #  21900 is :  12.474921226501465
+Testing loss at Epoch #  21950 is :  9.287349700927734
+Testing loss at Epoch #  22000 is :  8.927743911743164
+Testing loss at Epoch #  22050 is :  12.871246337890625
+Testing loss at Epoch #  22100 is :  23.640182495117188
+Testing loss at Epoch #  22150 is :  23.062753677368164
+Testing loss at Epoch #  22200 is :  12.594869613647461
+Testing loss at Epoch #  22250 is :  9.782876968383789
+Testing loss at Epoch #  22300 is :  8.62285327911377
+Testing loss at Epoch #  22350 is :  16.367849349975586
+Testing loss at Epoch #  22400 is :  20.67696762084961
+Testing loss at Epoch #  22450 is :  8.64213752746582
+Testing loss at Epoch #  22500 is :  9.659871101379395
+Testing loss at Epoch #  22550 is :  10.026639938354492
+Testing loss at Epoch #  22600 is :  10.057432174682617
+Testing loss at Epoch #  22650 is :  11.033096313476562
+Testing loss at Epoch #  22700 is :  13.754993438720703
+Testing loss at Epoch #  22750 is :  8.884400367736816
+Testing loss at Epoch #  22800 is :  11.066110610961914
+Testing loss at Epoch #  22850 is :  8.827351570129395
+Testing loss at Epoch #  22900 is :  8.382088661193848
+Testing loss at Epoch #  22950 is :  10.415762901306152
+Testing loss at Epoch #  23000 is :  13.486072540283203
+Testing loss at Epoch #  23050 is :  11.162199020385742
+Testing loss at Epoch #  23100 is :  8.81393051147461
+Testing loss at Epoch #  23150 is :  9.568275451660156
+Testing loss at Epoch #  23200 is :  7.918684959411621
+Testing loss at Epoch #  23250 is :  17.429834365844727
+Testing loss at Epoch #  23300 is :  16.366209030151367
+Testing loss at Epoch #  23350 is :  7.753303527832031
+Testing loss at Epoch #  23400 is :  8.748906135559082
+Testing loss at Epoch #  23450 is :  8.340787887573242
+Testing loss at Epoch #  23500 is :  13.546090126037598
+Testing loss at Epoch #  23550 is :  19.97783088684082
+Testing loss at Epoch #  23600 is :  10.656238555908203
+Testing loss at Epoch #  23650 is :  8.909858703613281
+Testing loss at Epoch #  23700 is :  20.065406799316406
+Testing loss at Epoch #  23750 is :  9.122212409973145
+Testing loss at Epoch #  23800 is :  8.133984565734863
+Testing loss at Epoch #  23850 is :  15.138617515563965
+Testing loss at Epoch #  23900 is :  7.8825507164001465
+Testing loss at Epoch #  23950 is :  11.169595718383789
+Testing loss at Epoch #  24000 is :  7.332940101623535
+Testing loss at Epoch #  24050 is :  8.325074195861816
+Testing loss at Epoch #  24100 is :  12.78738021850586
+Testing loss at Epoch #  24150 is :  8.813117027282715
+Testing loss at Epoch #  24200 is :  7.461328029632568
+Testing loss at Epoch #  24250 is :  9.896139144897461
+Testing loss at Epoch #  24300 is :  10.190884590148926
+Testing loss at Epoch #  24350 is :  8.908964157104492
+Testing loss at Epoch #  24400 is :  7.60601282119751
+Testing loss at Epoch #  24450 is :  9.550683975219727
+Testing loss at Epoch #  24500 is :  8.613677024841309
+Testing loss at Epoch #  24550 is :  9.278586387634277
+Testing loss at Epoch #  24600 is :  7.739055633544922
+Testing loss at Epoch #  24650 is :  7.403510093688965
+Testing loss at Epoch #  24700 is :  7.963684558868408
+Testing loss at Epoch #  24750 is :  11.185970306396484
+Testing loss at Epoch #  24800 is :  9.076798439025879
+Testing loss at Epoch #  24850 is :  9.24643611907959
+Testing loss at Epoch #  24900 is :  7.922976970672607
+Testing loss at Epoch #  24950 is :  7.627116680145264
+Testing loss at Epoch #  25000 is :  7.69692325592041
+Testing loss at Epoch #  25050 is :  8.081424713134766
+Testing loss at Epoch #  25100 is :  7.794531345367432
+Testing loss at Epoch #  25150 is :  7.280158996582031
+Testing loss at Epoch #  25200 is :  9.932214736938477
+Testing loss at Epoch #  25250 is :  7.589319229125977
+Testing loss at Epoch #  25300 is :  13.421636581420898
+Testing loss at Epoch #  25350 is :  7.146485328674316
+Testing loss at Epoch #  25400 is :  6.735581874847412
+Testing loss at Epoch #  25450 is :  7.6167802810668945
+Testing loss at Epoch #  25500 is :  10.739883422851562
+Testing loss at Epoch #  25550 is :  9.041996955871582
+Testing loss at Epoch #  25600 is :  7.73218297958374
+Testing loss at Epoch #  25650 is :  7.179498195648193
+Testing loss at Epoch #  25700 is :  6.611220836639404
+Testing loss at Epoch #  25750 is :  8.66982364654541
+Testing loss at Epoch #  25800 is :  7.027249336242676
+Testing loss at Epoch #  25850 is :  6.749466896057129
+Testing loss at Epoch #  25900 is :  14.529585838317871
+Testing loss at Epoch #  25950 is :  6.81651496887207
+Testing loss at Epoch #  26000 is :  6.986833095550537
+Testing loss at Epoch #  26050 is :  8.634847640991211
+Testing loss at Epoch #  26100 is :  6.48814582824707
+Testing loss at Epoch #  26150 is :  9.208874702453613
+Testing loss at Epoch #  26200 is :  6.685850620269775
+Testing loss at Epoch #  26250 is :  6.514273166656494
+Testing loss at Epoch #  26300 is :  7.938528537750244
+Testing loss at Epoch #  26350 is :  14.358136177062988
+Testing loss at Epoch #  26400 is :  21.906801223754883
+Testing loss at Epoch #  26450 is :  7.758053302764893
+Testing loss at Epoch #  26500 is :  6.698737144470215
+Testing loss at Epoch #  26550 is :  8.056674003601074
+Testing loss at Epoch #  26600 is :  6.267175197601318
+Testing loss at Epoch #  26650 is :  6.4085259437561035
+Testing loss at Epoch #  26700 is :  7.649421691894531
+Testing loss at Epoch #  26750 is :  9.099846839904785
+Testing loss at Epoch #  26800 is :  8.19788932800293
+Testing loss at Epoch #  26850 is :  14.384684562683105
+Testing loss at Epoch #  26900 is :  10.946504592895508
+Testing loss at Epoch #  26950 is :  8.806516647338867
+Testing loss at Epoch #  27000 is :  15.152667999267578
+Testing loss at Epoch #  27050 is :  8.582452774047852
+Testing loss at Epoch #  27100 is :  7.445159912109375
+Testing loss at Epoch #  27150 is :  7.232579231262207
+Testing loss at Epoch #  27200 is :  6.403649806976318
+Testing loss at Epoch #  27250 is :  7.067779064178467
+Testing loss at Epoch #  27300 is :  5.850229740142822
+Testing loss at Epoch #  27350 is :  6.983222961425781
+Testing loss at Epoch #  27400 is :  5.50053071975708
+Testing loss at Epoch #  27450 is :  8.592581748962402
+Testing loss at Epoch #  27500 is :  5.936136722564697
+Testing loss at Epoch #  27550 is :  5.890871524810791
+Testing loss at Epoch #  27600 is :  9.530384063720703
+Testing loss at Epoch #  27650 is :  15.711626052856445
+Testing loss at Epoch #  27700 is :  6.433908462524414
+Testing loss at Epoch #  27750 is :  9.931087493896484
+Testing loss at Epoch #  27800 is :  5.604603290557861
+Testing loss at Epoch #  27850 is :  7.813913822174072
+Testing loss at Epoch #  27900 is :  6.655728340148926
+Testing loss at Epoch #  27950 is :  21.76047134399414
+Testing loss at Epoch #  28000 is :  5.678082466125488
+Testing loss at Epoch #  28050 is :  6.364994525909424
+Testing loss at Epoch #  28100 is :  5.580653667449951
+Testing loss at Epoch #  28150 is :  6.544890880584717
+Testing loss at Epoch #  28200 is :  14.60696792602539
+Testing loss at Epoch #  28250 is :  5.347033500671387
+Testing loss at Epoch #  28300 is :  5.354333400726318
+Testing loss at Epoch #  28350 is :  5.707404136657715
+Testing loss at Epoch #  28400 is :  6.014970302581787
+Testing loss at Epoch #  28450 is :  6.467248916625977
+Testing loss at Epoch #  28500 is :  6.307497024536133
+Testing loss at Epoch #  28550 is :  5.949098587036133
+Testing loss at Epoch #  28600 is :  5.245606422424316
+Testing loss at Epoch #  28650 is :  11.64141845703125
+Testing loss at Epoch #  28700 is :  5.7240118980407715
+Testing loss at Epoch #  28750 is :  6.554994583129883
+Testing loss at Epoch #  28800 is :  8.13045597076416
+Testing loss at Epoch #  28850 is :  4.985440254211426
+Testing loss at Epoch #  28900 is :  6.235772132873535
+Testing loss at Epoch #  28950 is :  5.326257228851318
+Testing loss at Epoch #  29000 is :  9.209358215332031
+Testing loss at Epoch #  29050 is :  24.968374252319336
+Testing loss at Epoch #  29100 is :  5.091142177581787
+Testing loss at Epoch #  29150 is :  6.204211711883545
+Testing loss at Epoch #  29200 is :  4.993904113769531
+Testing loss at Epoch #  29250 is :  6.6035895347595215
+Testing loss at Epoch #  29300 is :  9.97651481628418
+Testing loss at Epoch #  29350 is :  6.915139198303223
+Testing loss at Epoch #  29400 is :  5.779970169067383
+Testing loss at Epoch #  29450 is :  6.854191780090332
+Testing loss at Epoch #  29500 is :  8.92492389678955
+Testing loss at Epoch #  29550 is :  5.377102851867676
+Testing loss at Epoch #  29600 is :  8.184737205505371
+Testing loss at Epoch #  29650 is :  5.595616340637207
+Testing loss at Epoch #  29700 is :  5.20226526260376
+Testing loss at Epoch #  29750 is :  5.704826831817627
+Testing loss at Epoch #  29800 is :  9.732616424560547
+Testing loss at Epoch #  29850 is :  5.087256908416748
+Testing loss at Epoch #  29900 is :  10.572154998779297
+Testing loss at Epoch #  29950 is :  16.03059196472168
+Testing loss at Epoch #  30000 is :  5.957469940185547
+Training completed.
+
+------------------------------------------------------------------
+Begin model evaluation...
+
+
+Evaluate results on test data...
+
+
+Saved PyTorch Model State to nn02_30000_0.001_adam_mse.pth
+
+Saved data to nn02_30000_0.001_adam_mse.pkl
+
+Completed training and evaluation.
+

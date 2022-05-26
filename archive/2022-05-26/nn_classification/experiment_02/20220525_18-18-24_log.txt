@@ -1,0 +1,304 @@
+Wed May 25 18:18:24 2022
+
+targets_one_hot is the one hot encoding for angle. ex: [1 0 1]
+
+Shape of waves is: torch.Size([514, 1024])
+Datatype of waves is: torch.float32
+waves requires grad: False
+Shape of targets is: torch.Size([514])
+Datatype of targets is: torch.int64
+targets requires grad: False
+Ex: 0
+Shape of targets_one_hot is: torch.Size([514, 6])
+Datatype of targets_one_hot is: torch.float32
+targets_one_hot requires grad: False
+Ex: tensor([1, 0, 0, 0, 0, 0])
+
+AcousticEmissionDataset loaded in!
+
+Parameters:
+time_stamp : 20220525_18-18-24
+SIG_LEN : 1024
+DT : 1e-07
+LOW_PASS : 50000
+HIGH_PASS : 800000
+FFT_UNITS : 1000
+NUM_BINS : 26
+EPOCHS : 3000
+LEARNING_RATE : 0.001
+BATCH_SIZE : 20
+train_seed : 41
+train_percent : 0.7
+test_percent : 0.30000000000000004
+total_count : 514
+train_count : 359
+test_count : 155
+angles : ['20deg' '22deg' '26deg' '30deg' '36deg' '40deg']
+feature_dim : 1024
+num_classes : 6
+
+Shape of x batch is: torch.Size([20, 1024])
+Datatype of x batch is: torch.float32
+
+Shape of y batch is: torch.Size([20, 6])
+Datatype of y batch is: torch.float32
+
+------------------------------------------------------------------
+Begin model training...
+
+NeuralNetwork_01(
+  (layers): Sequential(
+    (0): Linear(in_features=1024, out_features=10, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=10, out_features=6, bias=True)
+  )
+)
+
+Begin Training...
+
+Testing loss at Epoch #  0 is :  2.4814581871032715
+Testing loss at Epoch #  50 is :  1.4319119453430176
+Testing loss at Epoch #  100 is :  1.2868517637252808
+Testing loss at Epoch #  150 is :  1.1253747940063477
+Testing loss at Epoch #  200 is :  0.9377439618110657
+Testing loss at Epoch #  250 is :  0.8291085362434387
+Testing loss at Epoch #  300 is :  0.7419992089271545
+Testing loss at Epoch #  350 is :  0.7164743542671204
+Testing loss at Epoch #  400 is :  0.6480803489685059
+Testing loss at Epoch #  450 is :  0.6164023876190186
+Testing loss at Epoch #  500 is :  0.5619660019874573
+Testing loss at Epoch #  550 is :  0.5282126069068909
+Testing loss at Epoch #  600 is :  0.503169596195221
+Testing loss at Epoch #  650 is :  0.4503132104873657
+Testing loss at Epoch #  700 is :  0.41042882204055786
+Testing loss at Epoch #  750 is :  0.40123605728149414
+Testing loss at Epoch #  800 is :  0.3424946069717407
+Testing loss at Epoch #  850 is :  0.33099937438964844
+Testing loss at Epoch #  900 is :  0.30290141701698303
+Testing loss at Epoch #  950 is :  0.2866806089878082
+Testing loss at Epoch #  1000 is :  0.2874346971511841
+Testing loss at Epoch #  1050 is :  0.25069141387939453
+Testing loss at Epoch #  1100 is :  0.24879810214042664
+Testing loss at Epoch #  1150 is :  0.23400790989398956
+Testing loss at Epoch #  1200 is :  0.24893802404403687
+Testing loss at Epoch #  1250 is :  0.23033538460731506
+Testing loss at Epoch #  1300 is :  0.2154255360364914
+Testing loss at Epoch #  1350 is :  0.23161637783050537
+Testing loss at Epoch #  1400 is :  0.2597186267375946
+Testing loss at Epoch #  1450 is :  0.21431027352809906
+Testing loss at Epoch #  1500 is :  0.1893867403268814
+Testing loss at Epoch #  1550 is :  0.19764752686023712
+Testing loss at Epoch #  1600 is :  0.21052208542823792
+Testing loss at Epoch #  1650 is :  0.20427146553993225
+Testing loss at Epoch #  1700 is :  0.18490104377269745
+Testing loss at Epoch #  1750 is :  0.19684022665023804
+Testing loss at Epoch #  1800 is :  0.17517022788524628
+Testing loss at Epoch #  1850 is :  0.18969248235225677
+Testing loss at Epoch #  1900 is :  0.19335538148880005
+Testing loss at Epoch #  1950 is :  0.18563437461853027
+Testing loss at Epoch #  2000 is :  0.16975431144237518
+Testing loss at Epoch #  2050 is :  0.17543663084506989
+Testing loss at Epoch #  2100 is :  0.18019825220108032
+Testing loss at Epoch #  2150 is :  0.17812642455101013
+Testing loss at Epoch #  2200 is :  0.197934091091156
+Testing loss at Epoch #  2250 is :  0.1817258894443512
+Testing loss at Epoch #  2300 is :  0.1681576371192932
+Testing loss at Epoch #  2350 is :  0.17281895875930786
+Testing loss at Epoch #  2400 is :  0.17498360574245453
+Testing loss at Epoch #  2450 is :  0.19378134608268738
+Testing loss at Epoch #  2500 is :  0.18641531467437744
+Testing loss at Epoch #  2550 is :  0.16738930344581604
+Testing loss at Epoch #  2600 is :  0.15667301416397095
+Testing loss at Epoch #  2650 is :  0.17453081905841827
+Testing loss at Epoch #  2700 is :  0.16013465821743011
+Testing loss at Epoch #  2750 is :  0.16222360730171204
+Testing loss at Epoch #  2800 is :  0.16367009282112122
+Testing loss at Epoch #  2850 is :  0.15673457086086273
+Testing loss at Epoch #  2900 is :  0.1557910442352295
+Testing loss at Epoch #  2950 is :  0.17793293297290802
+Testing loss at Epoch #  3000 is :  0.15401364862918854
+Training completed.
+
+------------------------------------------------------------------
+Begin model evaluation...
+
+
+Evaluate results on test data...
+
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 5 , target=0
+class_prediction= 2 , target=3
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 5 , target=5
+class_prediction= 0 , target=0
+class_prediction= 4 , target=4
+class_prediction= 1 , target=1
+class_prediction= 4 , target=4
+class_prediction= 1 , target=1
+class_prediction= 5 , target=5
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 5 , target=5
+class_prediction= 4 , target=4
+class_prediction= 1 , target=1
+class_prediction= 4 , target=4
+class_prediction= 3 , target=3
+class_prediction= 4 , target=4
+class_prediction= 1 , target=1
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 1 , target=1
+class_prediction= 1 , target=3
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 5 , target=5
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 5 , target=5
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 1 , target=5
+class_prediction= 4 , target=4
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 1 , target=3
+class_prediction= 5 , target=5
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 4 , target=4
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 4 , target=4
+class_prediction= 3 , target=3
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 4 , target=4
+class_prediction= 5 , target=5
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 5 , target=5
+class_prediction= 3 , target=3
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 5 , target=5
+class_prediction= 3 , target=5
+class_prediction= 2 , target=2
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 3 , target=3
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 5 , target=5
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 5 , target=3
+class_prediction= 4 , target=4
+class_prediction= 1 , target=1
+class_prediction= 0 , target=5
+class_prediction= 5 , target=5
+class_prediction= 5 , target=5
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 2 , target=1
+class_prediction= 2 , target=2
+class_prediction= 5 , target=5
+class_prediction= 0 , target=0
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 5 , target=5
+class_prediction= 3 , target=3
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 5 , target=5
+class_prediction= 2 , target=2
+class_prediction= 2 , target=2
+class_prediction= 1 , target=4
+class_prediction= 2 , target=2
+class_prediction= 4 , target=4
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 0 , target=0
+class_prediction= 4 , target=4
+class_prediction= 0 , target=0
+class_prediction= 3 , target=3
+class_prediction= 0 , target=0
+class_prediction= 2 , target=3
+class_prediction= 4 , target=4
+class_prediction= 5 , target=5
+class_prediction= 3 , target=3
+class_prediction= 5 , target=5
+class_prediction= 1 , target=1
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 5 , target=5
+class_prediction= 1 , target=3
+class_prediction= 0 , target=0
+class_prediction= 1 , target=1
+class_prediction= 0 , target=0
+class_prediction= 5 , target=5
+class_prediction= 4 , target=4
+class_prediction= 1 , target=1
+class_prediction= 2 , target=2
+class_prediction= 5 , target=5
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+class_prediction= 4 , target=4
+class_prediction= 0 , target=0
+class_prediction= 4 , target=4
+class_prediction= 2 , target=2
+class_prediction= 0 , target=0
+
+Test Set Metrics:
+              precision    recall  f1-score   support
+
+       20deg       0.97      0.97      0.97        29
+       22deg       0.96      0.81      0.88        27
+       26deg       1.00      0.90      0.95        29
+       30deg       0.79      0.96      0.87        24
+       36deg       0.96      1.00      0.98        24
+       40deg       0.87      0.91      0.89        22
+
+    accuracy                           0.92       155
+   macro avg       0.92      0.92      0.92       155
+weighted avg       0.93      0.92      0.92       155
+
+
+Saved PyTorch Model State to nn01_3000_0.001_adam_mse.pth
+
+Saved data to nn01_3000_0.001_adam_mse.pkl
+
+Completed training and evaluation.
+
